@@ -1,0 +1,184 @@
+:root {
+    --bg-color: #0b0c15;        /* Noir profond légèrement bleuté */
+    --surface: #13151f;         /* Fond des cartes */
+    --text-primary: #cdd6f4;    /* Blanc cassé */
+    --text-dim: #7f849c;        /* Gris métadonnées */
+    --accent: #89b4fa;          /* Bleu cyan scientifique */
+    --keyword: #f5c2e7;         /* Rose pour les clés */
+    --success: #a6e3a1;         /* Vert système */
+    --border: rgba(137, 180, 250, 0.2);
+    --font-mono: 'JetBrains Mono', 'Fira Code', monospace;
+}
+
+/* --- BASE & LAYOUT --- */
+body {
+    background-color: var(--bg-color);
+    color: var(--text-primary);
+    font-family: var(--font-mono);
+    line-height: 1.5;
+    margin: 0;
+    /* Fond quadrillé technique */
+    background-image: 
+        linear-gradient(rgba(137, 180, 250, 0.03) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(137, 180, 250, 0.03) 1px, transparent 1px);
+    background-size: 50px 50px;
+    font-size: 14px;
+    
+    /* Sticky Footer Logic */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex: 1; /* Pousse le footer vers le bas */
+}
+
+.container { max-width: 1100px; margin: 0 auto; padding: 0 2rem; }
+a { text-decoration: none; color: inherit; transition: 0.2s; }
+a:hover { color: var(--accent); }
+
+/* --- HEADER --- */
+header { 
+    border-bottom: 1px solid var(--border); 
+    padding: 1.5rem 0; 
+    background: rgba(11, 12, 21, 0.95);
+    backdrop-filter: blur(5px);
+    position: sticky; top: 0; z-index: 100;
+}
+nav ul { display: flex; list-style: none; padding: 0; gap: 2rem; margin: 0; }
+nav a { color: var(--text-dim); text-transform: uppercase; font-size: 0.85rem; letter-spacing: 1px; }
+nav a:hover, nav a.active { color: var(--accent); }
+nav a::before { content: "[ "; opacity: 0; transition: opacity 0.2s; color: var(--border); }
+nav a::after { content: " ]"; opacity: 0; transition: opacity 0.2s; color: var(--border); }
+nav a:hover::before, nav a:hover::after { opacity: 1; }
+
+/* --- TITRES --- */
+h1, h2, h3 { font-weight: normal; margin-top: 0; }
+.section-title {
+    border-bottom: 1px solid var(--border);
+    padding-bottom: 0.5rem;
+    margin: 3rem 0 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+}
+.section-id { color: var(--text-dim); font-size: 0.8rem; }
+
+/* --- GRILLE RESPONSIVE (Projets & Livres) --- */
+.grid-system {
+    display: grid;
+    gap: 1.5rem;
+    margin-top: 2rem;
+    /* Mobile First : 1 colonne par défaut */
+    grid-template-columns: 1fr;
+}
+
+/* Tablette (dès 700px de large) -> 2 colonnes */
+@media (min-width: 700px) {
+    .grid-system {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Desktop (dès 1024px de large) -> 3 colonnes */
+@media (min-width: 1024px) {
+    .grid-system {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* --- CARTES DE DONNÉES --- */
+.data-card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    box-sizing: border-box;
+    transition: transform 0.2s, border-color 0.2s;
+}
+.data-card:hover { border-color: var(--accent); transform: translateY(-3px); }
+.data-header {
+    border-bottom: 1px dashed var(--border);
+    padding-bottom: 0.5rem; margin-bottom: 1rem;
+    display: flex; justify-content: space-between; align-items: center;
+}
+
+/* --- RAPPORT / CV STYLE --- */
+.report-block {
+    border-left: 2px solid var(--border);
+    padding-left: 1.5rem;
+    margin-bottom: 2.5rem;
+    position: relative;
+}
+.report-block::before {
+    content: ""; position: absolute; left: -5px; top: 0;
+    width: 8px; height: 8px; background: var(--bg-color); border: 1px solid var(--accent);
+}
+.meta-data { color: var(--text-dim); font-size: 0.8rem; margin-bottom: 0.5rem; display: block; text-transform: uppercase; }
+
+/* --- SKILLS TOKENS --- */
+.skill-array { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+.token {
+    background: rgba(137, 180, 250, 0.1); color: var(--accent);
+    padding: 0.2rem 0.6rem; font-size: 0.85rem; border: 1px solid transparent;
+}
+.token:hover { border-color: var(--accent); cursor: crosshair; }
+
+/* --- FOOTER --- */
+footer { 
+    border-top: 1px solid var(--border); 
+    padding: 2rem 0; 
+    text-align: center; 
+    color: var(--text-dim); 
+    font-size: 0.75rem; 
+    margin-top: 4rem;
+}
+
+/* Permet d'afficher les paragraphes et sauts de ligne correctement */
+.review-text {
+    white-space: pre-line; 
+    line-height: 1.6;
+}
+
+/* =========================================
+   MEDIA QUERIES (RESPONSIVE)
+   ========================================= */
+
+/* --- TABLETTES (< 1024px) --- */
+@media (max-width: 1024px) {
+    .container { padding: 0 1.5rem; }
+    header .container { flex-direction: column; gap: 1rem; }
+    nav ul { gap: 1.5rem; font-size: 0.9rem; }
+}
+
+/* --- MOBILE (< 768px) --- */
+@media (max-width: 768px) {
+    html { font-size: 14px; }
+    h1 { font-size: 1.8rem !important; }
+    
+    /* Navigation en grille 2x2 */
+    nav ul {
+        display: grid; grid-template-columns: 1fr 1fr; gap: 10px; width: 100%; text-align: center;
+    }
+    nav a {
+        display: block; padding: 0.5rem; border: 1px solid rgba(137, 180, 250, 0.1);
+        border-radius: 4px; background: rgba(19, 21, 31, 0.5);
+    }
+
+    /* CV Header en colonne */
+    .cv-header-container {
+        flex-direction: column !important;
+        align-items: flex-start !important;
+        gap: 1.5rem;
+    }
+    .cv-contact-info {
+        text-align: left !important;
+        border-top: 1px dashed var(--border); padding-top: 1rem; width: 100%;
+    }
+    
+    .report-block { padding-left: 1rem; margin-left: 0.5rem; }
+}
