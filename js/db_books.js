@@ -18,7 +18,7 @@ const LIBRARY_DATA = [
         review: `
             The Dark Forest elevates the trilogy's scope by introducing the Dark Forest Theory, a chilling hypothesis about interstellar civilizations: trust is impossible, and survival demands preemptive strikes. 
             This book is the most philosophically dense of the three, grappling with game theory, cosmology, and ethics.
-            The Dark Forest theory is really interessting and exciting. I still think about it at least once a month ! It's directly related to Fermi Paradox. Incroyable !
+            The Dark Forest theory is really interessting and exciting. I still think about it at least once a month ! It's directly related to the Fermi Paradox. Incroyable !
         `
     },
     {
