@@ -2,7 +2,7 @@ const LIBRARY_DATA = [
     {
         title: "3 Body Problem",
         author: "Liu Cixin",
-        score: "0.95",
+        score: "4/5",
         status: "READ",
         review: `
             Liu Cixin's debut in the trilogy is a tour de force in hard science fiction, seamlessly weaving astrophysics, history, and philosophy. 
@@ -13,7 +13,7 @@ const LIBRARY_DATA = [
     {
         title: "3 Body Problem: Dark Forest",
         author: "Liu Cixin",
-        score: "0.95",
+        score: "5/5",
         status: "READ",
         review: `
             The Dark Forest elevates the trilogy's scope by introducing the Dark Forest Theory, a chilling hypothesis about interstellar civilizations: trust is impossible, and survival demands preemptive strikes. 
@@ -24,7 +24,7 @@ const LIBRARY_DATA = [
     {
         title: "3 Body Probel: Death's End",
         author: "Liu Cixin",
-        score: "0.95",
+        score: "4/5",
         status: "READ",
         review: `
             Death's End is the most ambitious and divisive book in the trilogy. Spanning billions of years, it explores the cyclical rise and fall of civilizations, the nature of time, and the fragility of human memory. 
@@ -34,6 +34,7 @@ const LIBRARY_DATA = [
     {
         title: "Pyramides",
         author: "Romain Benassaya",
+        score: "3.5/5",
         status: "READ",
         review: `
             "Pyramid" is a fantastic sci-fi/fantasy book that you can devour in no time! The writing is super smooth, no overly complicated vocabulary, just a gripping story with short, exhilarating chapters that keep you hooked from start to finish. 
