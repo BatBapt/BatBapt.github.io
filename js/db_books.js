@@ -115,4 +115,15 @@ const LIBRARY_DATA = [
             The saga ends with the realization that the future of the galaxy lies not in mathematics or empires, but in a unified, collective consciousness overseen by a silent mechanical guardian.
         `
     },
+    {
+        title: "Blindsight",
+        author: "Peter Watts",
+        score: "?/5",
+        status: "IN PROGRESS",
+        review: `
+            I tried to read this book, but I just can't get into it. The writing style is very dense and technical, which makes it hard to follow the story. The characters are also not very relatable, and I found myself struggling to care about their fates. 
+            The plot is interesting, but it's buried under layers of jargon and complex scientific concepts. 
+            I need to try again !
+        `
+    },
 ];
