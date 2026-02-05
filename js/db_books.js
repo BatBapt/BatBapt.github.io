@@ -126,4 +126,16 @@ const LIBRARY_DATA = [
             I need to try again !
         `
     },
+    {
+        title: "Cogito",
+        author: "Victor Dixen",
+        score: "4/5",
+        status: "READ",
+        review: `
+            Cogito stands out as a sophisticated work of speculative fiction that moves beyond a simple "man versus machine" conflict to explore the complex intersection of philosophy and technology. 
+            By integrating the Turing test and Cartesian logic, the narrative challenges whether artificial intelligence can ever truly achieve consciousness or if it merely masters the art of imitation. 
+            The story highlights a stark social divide, where the marginalized are forced to undergo risky neural enhancements just to remain functional in an automated economy. 
+            Ultimately, the book presents a balanced critique of transhumanism, illustrating that while technology offers the promise of human perfection, it simultaneously risks erasing the very "spark" of individuality and free will that defines the human experience.
+        `
+    },
 ];
