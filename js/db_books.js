@@ -37,7 +37,7 @@ const LIBRARY_DATA = [
         score: "3.5/5",
         status: "READ",
         review: `
-            Pyramid" is a fantastic sci-fi/fantasy book that you can devour in no time! The writing is super smooth, no overly complicated vocabulary, just a gripping story with short, exhilarating chapters that keep you hooked from start to finish. 
+            Pyramid is a fantastic sci-fi/fantasy book that you can devour in no time! The writing is super smooth, no overly complicated vocabulary, just a gripping story with short, exhilarating chapters that keep you hooked from start to finish. 
             The themes explored are absolutely fascinating and really get your brain gears turning. 
             But here's the catch: The ending left me a bit underwhelmed. Too many unanswered questions! It felt like the author built up this incredible world and then left some doors frustratingly closed.
         `
