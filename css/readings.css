@@ -1,0 +1,132 @@
+/* =========================================
+   Readings Page Styles
+   ========================================= */
+.readings-container {
+    /* Change max-width from 800px to 1000px (or even 1200px) */
+    max-width: 1200px; 
+    margin: 0 auto;
+    padding: 2rem 5% 4rem 5%;
+}
+
+.readings-header {
+    margin-bottom: 3rem;
+    border-bottom: 1px solid #1e2228;
+    padding-bottom: 1.5rem;
+}
+
+.readings-header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.readings-header p {
+    color: var(--text-muted);
+    font-size: 1.1rem;
+}
+
+.book-card {
+    background-color: #15181c;
+    border: 1px solid #1e2228;
+    border-radius: 8px;
+    /* Increase padding for a more spacious feel inside the card */
+    padding: 2.5rem; 
+    margin-bottom: 2rem;
+    transition: border-color 0.3s ease;
+}
+
+.book-card:hover {
+    border-color: var(--accent-color);
+}
+
+.book-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 1.5rem;
+    border-bottom: 1px dashed #1e2228;
+    padding-bottom: 1rem;
+}
+
+.book-title {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: var(--text-light);
+}
+
+.book-author {
+    color: var(--accent-color);
+    font-size: 1rem;
+    margin-top: 0.3rem;
+}
+
+.book-meta {
+    text-align: right;
+}
+
+.book-score {
+    font-weight: 600;
+    color: var(--text-light);
+    font-size: 1.2rem;
+}
+
+.book-status {
+    display: inline-block;
+    padding: 0.3rem 0.8rem;
+    border-radius: 4px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    margin-top: 0.5rem;
+    letter-spacing: 1px;
+}
+
+.status-read {
+    background-color: rgba(100, 255, 218, 0.1);
+    color: var(--accent-color);
+}
+
+.status-progress {
+    background-color: rgba(255, 171, 0, 0.1);
+    color: #ffab00;
+}
+
+.book-review {
+    color: var(--text-muted);
+    font-size: 0.95rem;
+    line-height: 1.7;
+    /* This ensures your template literal line breaks are respected */
+    white-space: pre-line; 
+}
+
+/* =========================================
+   Author Section Styles
+   ========================================= */
+.author-section {
+    margin-bottom: 5rem;
+}
+
+.author-heading {
+    font-size: 2rem;
+    color: var(--accent-color);
+    margin-bottom: 2rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid #1e2228;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* Updated book title size (changed to h3 in logic) */
+.book-title {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: var(--text-light);
+}
+
+/* Optional: Subtle fade-in animation for sections */
+.author-section {
+    animation: fadeIn 0.8s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}

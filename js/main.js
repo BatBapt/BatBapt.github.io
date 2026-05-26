@@ -1,30 +1,24 @@
-// Charge header et footer dynamiquement
-async function loadComponents() {
-    const components = document.querySelectorAll('[data-component]');
-    for (const el of components) {
-        const name = el.getAttribute('data-component');
-        try {
-            const response = await fetch(`components/${name}.html`);
-            if (response.ok) {
-                el.innerHTML = await response.text();
-                // Active le lien courant dans le menu
-                highlightCurrentPage();
-            }
-        } catch (err) {
-            console.error(`Erreur chargement ${name}:`, err);
-        }
+document.addEventListener("DOMContentLoaded", function() {
+    
+    function loadComponent(elementId, filePath) {
+        fetch(filePath)
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error("Failed to load component: " + filePath);
+                }
+                return response.text();
+            })
+            .then(htmlData => {
+                const container = document.getElementById(elementId);
+                if (container) {
+                    container.innerHTML = htmlData;
+                }
+            })
+            .catch(error => console.error("Error:", error));
     }
-}
 
-function highlightCurrentPage() {
-    const currentPath = window.location.pathname.split('/').pop() || 'index.html';
-    const links = document.querySelectorAll('nav a');
-    links.forEach(link => {
-        if (link.getAttribute('href') === currentPath) {
-            link.style.color = 'var(--accent)';
-            link.style.fontWeight = 'bold';
-        }
-    });
-}
+    // Updated paths to the components folder
+    loadComponent("header-placeholder", "components/header.html");
+    loadComponent("footer-placeholder", "components/footer.html");
 
-document.addEventListener('DOMContentLoaded', loadComponents);
+});

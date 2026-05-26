@@ -1,0 +1,145 @@
+/* =========================================
+   Resume Page Styles
+   ========================================= */
+.resume-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem 5% 4rem 5%;
+}
+
+.resume-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    border-bottom: 1px solid #1e2228;
+    padding-bottom: 2rem;
+    margin-bottom: 3rem;
+}
+
+.resume-header h1 {
+    font-size: 2.5rem;
+    letter-spacing: 0;
+    margin-bottom: 0.2rem;
+    line-height: 1;
+}
+
+.role-title {
+    color: var(--accent-color);
+    font-size: 0.9rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin: 0;
+}
+
+.contact-info {
+    text-align: right;
+    font-size: 0.85rem;
+    color: var(--text-muted);
+    line-height: 1.6;
+}
+
+.contact-info a {
+    color: var(--text-light);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.contact-info a:hover {
+    color: var(--accent-color);
+}
+
+.resume-section {
+    margin-bottom: 4rem;
+}
+
+.resume-section h2 {
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--text-light);
+    border-bottom: 1px solid #1e2228;
+    padding-bottom: 0.5rem;
+    margin-bottom: 2rem;
+}
+
+.resume-item {
+    margin-bottom: 2.5rem;
+}
+
+.resume-meta {
+    font-size: 0.8rem;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 0.5rem;
+}
+
+.resume-item h3 {
+    font-size: 1.1rem;
+    color: var(--text-light);
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+}
+
+.resume-item p {
+    font-size: 0.95rem;
+    color: var(--text-muted);
+    margin-bottom: 0.5rem;
+    max-width: 100%;
+}
+
+.resume-item ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.resume-item ul li {
+    font-size: 0.9rem;
+    color: var(--text-muted);
+    margin-bottom: 0.4rem;
+    position: relative;
+    padding-left: 1.2rem;
+}
+
+.resume-item ul li::before {
+    content: "→";
+    position: absolute;
+    left: 0;
+    color: var(--accent-color);
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.skills-category h4 {
+    color: var(--text-light);
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 1rem;
+}
+
+.skill-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.6rem;
+}
+
+.tag {
+    background-color: #1e2228;
+    color: var(--text-light);
+    padding: 0.4rem 0.8rem;
+    border-radius: 4px;
+    font-size: 0.85rem;
+    border: 1px solid transparent;
+    transition: all 0.3s ease;
+}
+
+.tag:hover {
+    border-color: var(--accent-color);
+    color: var(--accent-color);
+}
