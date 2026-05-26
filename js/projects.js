@@ -8,6 +8,7 @@ document.addEventListener("DOMContentLoaded", function() {
         "brain_seg",
         "rooftop_detection",
         "fruit_classification",
+        "satellite_image",
     ];
     
     const githubUsername = "BatBapt";

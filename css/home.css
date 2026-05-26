@@ -49,3 +49,38 @@
     color: var(--text-muted);
     border: 1px dashed var(--text-muted);
 }
+
+/* =========================================
+   Responsive Design (Mobile & Tablet)
+   ========================================= */
+@media (max-width: 768px) {
+    .hero-section {
+        flex-direction: column-reverse; /* Met l'image au-dessus du texte */
+        text-align: center;
+        padding: 3rem 5%;
+        gap: 3rem;
+    }
+
+    .hero-content {
+        max-width: 100%;
+    }
+
+    .hero-content h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero-content p {
+        margin: 0 auto 2.5rem auto;
+    }
+
+    .cta-buttons {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .image-placeholder {
+        width: 250px;
+        height: 250px;
+        margin: 0 auto;
+    }
+}

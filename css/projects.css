@@ -94,3 +94,16 @@
     border-radius: 50%;
     background-color: var(--accent-color);
 }
+
+/* =========================================
+   Responsive Design (Mobile & Tablet)
+   ========================================= */
+@media (max-width: 768px) {
+    .projects-container {
+        padding: 1.5rem 5% 3rem 5%;
+    }
+
+    .projects-header h1 {
+        font-size: 2rem;
+    }
+}

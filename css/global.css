@@ -122,3 +122,32 @@ footer {
 .social-links a:hover {
     color: var(--accent-color);
 }
+
+
+/* =========================================
+   Responsive Design (Mobile & Tablet)
+   ========================================= */
+@media (max-width: 768px) {
+    header {
+        padding: 1.5rem 5%;
+    }
+
+    .nav-links {
+        flex-wrap: wrap;
+        gap: 1.5rem;
+    }
+
+    footer {
+        padding: 2rem 5%;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        gap: 1.5rem;
+        text-align: center;
+    }
+
+    .social-links {
+        justify-content: center;
+    }
+}
