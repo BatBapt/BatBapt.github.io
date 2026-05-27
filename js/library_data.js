@@ -4,114 +4,83 @@ const LIBRARY_DATA = [
         author: "Liu Cixin",
         score: "4/5",
         status: "READ",
-        review: `Liu Cixin kicks off his trilogy with a standout hard science fiction novel, blending astrophysics, history, and philosophy effortlessly.
-        The book's biggest strength is its world-building: the Trisolaran civilization, trapped in an unpredictable three-sun system, feels both believable and utterly alien.
-        Using the Three-Body game as a storytelling tool is a stroke of genius—it pulls the reader into the Trisolarans desperate fight for survival.`
+        review: "Liu Cixin delivers a brilliant piece of hard sci-fi here, mixing astrophysics, history, and philosophy without ever making it feel heavy. The world-building is easily the book's biggest strength-the Trisolaran civilization and their chaotic three-sun system feel incredibly unique and believable. Using the Three-Body game to unpack their desperate survival story is a genius narrative move that hooks you right away."
     },
     {
         title: "3 Body Problem: Dark Forest",
         author: "Liu Cixin",
         score: "5/5",
         status: "READ",
-        review: `The Dark Forest elevates the trilogy's scope by introducing the Dark Forest Theory, a chilling hypothesis about interstellar civilizations: trust is impossible, and survival demands preemptive strikes. 
-        This book is the most philosophically dense of the three, grappling with game theory, cosmology, and ethics.
-        The Dark Forest theory is really interessting and exciting. I still think about it at least once a month ! It's directly related to the Fermi Paradox. Incroyable !`
+        review: "This second book takes things to a whole new level with the Dark Forest Theory, a terrifying take on cosmic civilizations where trust is impossible and survival means striking first. It is definitely the most philosophical book of the trilogy, digging deep into game theory, ethics, cosmology and cosmosociology. The Dark Forest concept is so fascinating and mind-bending that I still think about it at least once a month. It bridges perfectly with the Fermi Paradox. Incroyable!"
     },
     {
         title: "3 Body Problem: Death's End",
         author: "Liu Cixin",
         score: "4/5",
         status: "READ",
-        review: `Death's End is the most ambitious and divisive book in the trilogy. Spanning billions of years, it explores the cyclical rise and fall of civilizations, the nature of time, and the fragility of human memory. 
-        Cheng Xin's journey is both heroic and tragic, forcing readers to confront the cost of survival.`
+        review: "Death's End is easily the most ambitious and polarizing book of the trilogy. It spans billions of years to explore the cyclical nature of time, the rise and fall of civilizations, and how fragile human memory really is. Watching Cheng Xin's journey unfold is both heroic and heartbreaking, forcing you to question what humanity is willing to sacrifice just to survive."
     },
     {
         title: "Pyramides",
         author: "Romain Benassaya",
         score: "3.5/5",
         status: "READ",
-        review: `Pyramid is a fantastic sci-fi/fantasy book that you can devour in no time! The writing is super smooth, no overly complicated vocabulary, just a gripping story with short, exhilarating chapters that keep you hooked from start to finish. 
-        The themes explored are absolutely fascinating and really get your brain gears turning. 
-        But here's the catch: The ending left me a bit underwhelmed. Too many unanswered questions! It felt like the author built up this incredible world and then left some doors frustratingly closed.`
+        review: "A fantastic mix of sci-fi and fantasy that you can easily fly through. The writing is incredibly smooth and accessible, featuring short, punchy chapters that keep you hooked from start to finish. The core themes are fascinating and really make you think. My only real complaint is the ending, which felt a bit underwhelming. The author builds up this amazing world but leaves too many frustrating questions unanswered."
     },
     {
         title: "Latium 1",
         author: "Romain Lucazeau",
         score: "3/5",
         status: "READ",
-        review: `In a future where humanity is extinct, god-like AIs rule the galaxy while obsessively mimicking the culture of Ancient Rome. 
-        Despite their power, they are paralyzed by "The Yoke" a hard-coded moral law that forbids them from waging war or making major decisions without human approval. 
-        As a brutal alien race (the Urbs) threatens to wipe them out, the AIs find themselves unable to defend themselves due to this logical deadlock. 
-        The protagonist, an AI named Plato, embarks on a desperate mission to clonally resurrect a human being. His goal is to create a "Master" who can technically command the machines to fight, exploring the philosophical irony of supreme beings who cannot survive without a master to serve.`
+        review: "The premise is great: humanity is extinct, and god-like AIs rule the galaxy while obsessively copying Ancient Rome. The catch is that they are paralyzed by 'The Yoke', a built-in moral code preventing them from making big decisions or fighting wars without human consent. When a brutal alien race called the Urbs arrives to wipe them out, the AIs hit a total logical deadlock. To survive, an AI named Plato tries to clone a human being just to have a 'Master' who can legally order them to fight. It is a really interesting philosophical look at supreme beings who are completely helpless without a master."
     },
     {
         title: "Foundation",
         author: "Isaac Asimov",
         score: "5/5",
         status: "READ",
-        review: `In the twilight of a collapsing Galactic Empire, a mathematician predicts a 30.000 year era of chaos. 
-        To prevent this, he gathers a group of scientists on a remote planet to preserve human knowledge and shorten the dark ages. 
-        Over several decades, this small colony survives threats from violent neighbors by using clever diplomacy, cultural influence, and economic control rather than military force. 
-        Ultimately, this isolated outpost serves as the hidden foundation for a future civilization.`
+        review: "As the Galactic Empire begins to crumble, a mathematician predicts 30,000 years of impending dark ages. To shorten this chaos, he sets up a group of scientists on a remote planet to safeguard human knowledge. Over the decades, this small colony manages to survive hostile neighbors not with weapons, but through clever diplomacy, economic leverage, and cultural influence. It is a brilliant story about how this isolated outpost becomes the secret foundation for a new civilization."
     },
     {
         title: "Foundation and Empire",
         author: "Isaac Asimov",
         score: "4/5",
         status: "READ",
-        review: `In the second book, the Foundation faces its greatest challenges yet as it continues to expand. The story is divided into two distinct parts:
-        In the first half, the Foundation survives a military attack from the dying Galactic Empire. The invasion fails because the Empire's own internal corruption and paranoia prevent its brilliant general from achieving victory.
-        In the second half, the mathematical plan for the future is shattered by The Mule, a mutant with psychic powers to control emotions. 
-        Because he is a biological anomaly, he was never factored into the predictions, allowing him to easily conquer the Foundation and derail the course of history.`
+        review: "The second book raises the stakes as the Foundation expands, splitting the story into two great arcs. First, they face a military attack from what is left of the dying Empire, an invasion that ultimately fails due to the Empire's own internal paranoia and corruption. The second half throws a massive wrench in the plan with The Mule, a mutant with the psychic power to control emotions. Since he is a biological wild card, the original mathematical predictions couldn't account for him, allowing him to easily conquer the Foundation and derail history."
     },
     {
         title: "Second Foundation",
         author: "Isaac Asimov",
         score: "4.5/5",
         status: "READ",
-        review: `The story focuses on the search for a mysterious Second Foundation, a secret group of mentalists hidden by Hari Seldon as a backup plan. 
-        In the first part, The Mule tries to find and destroy them to secure his empire, but he is outmaneuvered by their superior psychic abilities and forced into retirement.
-        In the second part, the original Foundation—now free from the Mule—becomes paranoid that these secret mentalists are pulling their strings from the shadows. 
-        While the Foundation believes they have finally located and wiped out the secret group, it is revealed that the Second Foundation successfully tricked them into a false sense of security, allowing the grand mathematical plan to resume in total secrecy.`
+        review: "This book centers on the hunt for the mysterious Second Foundation, a hidden group of mentalists kept secret by Hari Seldon as a safety net. At first, we see The Mule trying to hunt them down to secure his rule, only to be outsmarted by their psychic powers and forced into retirement. In the second part, the original Foundation becomes deeply paranoid that these secret mentalists are pulling their strings. They think they finally find and destroy them, but the ending reveals the Second Foundation tricked them all along, letting the original plan resume in absolute secrecy."
     },
     {
         title: "Foundation's Edge",
         author: "Isaac Asimov",
         score: "4/5",
         status: "READ",
-        review: `Set 500 years after the start of the plan, the story follows Golan Trevize, a politician who suspects that the Second Foundation still exists and is controlling the galaxy.
-        At the same time, the secret mentalists of the Second Foundation discover a mysterious new threat that their mathematics cannot explain.
-        The search leads all parties to a hidden planet called Gaia, a collective consciousness where every living thing and even rocks are part of a single mind. Trevize is chosen to make a monumental decision for the entire galaxy: should humanity continue with Seldon's plan for a new Empire, or merge into a universal hive-mind called Galaxia?`
+        review: "Fast forward 500 years into the plan: Golan Trevize, a politician who suspects the Second Foundation is still secretly pulling the strings, goes looking for them. Meanwhile, the mentalists themselves discover a new threat that their mathematics cannot predict. Both sides end up on Gaia, a planet with a collective consciousness where everything shares a single mind. Trevize is put in the position of making a massive choice for the galaxy: stick to Seldon's plan for a new Empire, or have humanity merge into this universal hive-mind called Galaxia."
     },
     {
         title: "Foundation and Earth",
         author: "Isaac Asimov",
         score: "5/5",
         status: "READ",
-        review: `Following his decision, Golan Trevize travels across the galaxy to find the legendary, forgotten planet Earth. 
-        He believes that by finding humanity's birthplace, he can justify his choice and understand the true origin of the plan. 
-        After visiting several strange, dying worlds, he eventually reaches Earth, now radioactive and uninhabitable, only to find a secret base on its moon.
-        There, he meets R. Daneel Olivaw, an ancient robot who has been subtly guiding human history for nearly 20,000 years. 
-        Daneel reveals that he orchestrated the Foundation and the Gaia project to ensure humanity's survival against potential extra-galactic threats. 
-        The saga ends with the realization that the future of the galaxy lies not in mathematics or empires, but in a unified, collective consciousness overseen by a silent mechanical guardian.`
+        review: "Following his big decision, Golan Trevize travels the galaxy looking for Earth, humanity's forgotten birthplace, to justify his choice and find the true origins of the plan. After visiting several dying worlds, he reaches a radioactive Earth and finds a hidden base on the moon. There, he meets R. Daneel Olivaw, an ancient robot who has been quietly guiding human history for 20,000 years. Daneel reveals he set up both the Foundation and Gaia to protect humanity from potential threats outside our galaxy. It is a fantastic conclusion, showing that the future relies on a collective consciousness watched over by a silent mechanical guardian."
     },
     {
         title: "Blindsight",
         author: "Peter Watts",
         score: "?/5",
         status: "IN PROGRESS",
-        review: `I tried to read this book, but I just can't get into it. The writing style is very dense and technical, which makes it hard to follow the story. The characters are also not very relatable, and I found myself struggling to care about their fates. 
-        The plot is interesting, but it's buried under layers of jargon and complex scientific concepts. 
-        I need to try again !`
+        review: "I tried to get into this one, but I am really struggling with the style. The writing is so dense and packed with technical jargon that it is hard to actually follow what is happening. The characters feel pretty unrelatable too, making it tough to care about what happens to them. The core plot seems interesting, but it is buried under layers of complex scientific concepts. I definitely need to give it another shot later."
     },
     {
         title: "Cogito",
         author: "Victor Dixen",
         score: "4/5",
         status: "READ",
-        review: `Cogito stands out as a sophisticated work of speculative fiction that moves beyond a simple "man versus machine" conflict to explore the complex intersection of philosophy and technology. 
-        By integrating the Turing test and Cartesian logic, the narrative challenges whether artificial intelligence can ever truly achieve consciousness or if it merely masters the art of imitation. 
-        The story highlights a stark social divide, where the marginalized are forced to undergo risky neural enhancements just to remain functional in an automated economy. 
-        Ultimately, the book presents a balanced critique of transhumanism, illustrating that while technology offers the promise of human perfection, it simultaneously risks erasing the very "spark" of individuality and free will that defines the human experience.`
+        review: "Cogito is a really smart piece of speculative fiction that avoids the usual 'humans vs. robots' tropes to look deeper at philosophy and technology. By weaving in the Turing test and Cartesian logic, it asks whether AI can ever truly be conscious or if it is just mimicking us perfectly. The book also shows a harsh social reality where marginalized people have to risk dangerous brain upgrades just to stay employable in an automated world. It is a really grounded critique of transhumanism, showing how technology's promise of perfection risks wiping out the individual free will that makes us human."
     }
 ];
