@@ -1,5 +1,5 @@
 /* =========================================
-   Home Page Styles
+   Home Page Styles (Hero Section)
    ========================================= */
 .hero-section {
     display: flex;
@@ -38,24 +38,72 @@
     gap: 1.5rem;
 }
 
-.image-placeholder {
+/* =========================================
+   Profile Image
+   ========================================= */
+.profile-image {
     width: 350px;
     height: 350px;
-    background-color: #1e2228;
     border-radius: 12px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    object-fit: cover;
+    border: 2px solid #1e2228;
+    transition: border-color 0.3s ease, transform 0.3s ease;
+}
+
+.profile-image:hover {
+    border-color: var(--accent-color);
+    transform: translateY(-5px);
+}
+
+/* =========================================
+   PhD Research Section
+   ========================================= */
+.research-section {
+    padding: 5rem 10%;
+    background-color: #121418;
+    border-top: 1px solid #1e2228;
+}
+
+.research-header {
+    margin-bottom: 2rem;
+}
+
+.research-header h2 {
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: var(--accent-color);
+    margin-bottom: 0.5rem;
+}
+
+.research-header h3 {
+    font-size: 2rem;
+    color: var(--text-light);
+}
+
+.research-content {
+    max-width: 800px;
+}
+
+.research-content p {
+    font-size: 1.1rem;
     color: var(--text-muted);
-    border: 1px dashed var(--text-muted);
+    margin-bottom: 1.5rem;
+    line-height: 1.8;
+}
+
+.research-content strong {
+    color: var(--text-light);
+    font-weight: 600;
 }
 
 /* =========================================
    Responsive Design (Mobile & Tablet)
    ========================================= */
 @media (max-width: 768px) {
+    /* Hero Section Mobile */
     .hero-section {
-        flex-direction: column-reverse; /* Met l'image au-dessus du texte */
+        flex-direction: column-reverse;
         text-align: center;
         padding: 3rem 5%;
         gap: 3rem;
@@ -78,9 +126,24 @@
         flex-wrap: wrap;
     }
 
-    .image-placeholder {
+    /* Profile Image Mobile */
+    .profile-image {
         width: 250px;
         height: 250px;
         margin: 0 auto;
+        display: block;
+    }
+
+    /* PhD Research Mobile */
+    .research-section {
+        padding: 4rem 5%;
+    }
+
+    .research-header h3 {
+        font-size: 1.6rem;
+    }
+
+    .research-content p {
+        font-size: 1rem;
     }
 }
