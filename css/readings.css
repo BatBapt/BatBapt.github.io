@@ -2,8 +2,8 @@
    Readings Page Styles
    ========================================= */
 .readings-container {
-    /* Change max-width from 800px to 1000px (or even 1200px) */
-    max-width: 1200px; 
+    width: 100%;
+    max-width: 1200px;
     margin: 0 auto;
     padding: 2rem 5% 4rem 5%;
 }
@@ -28,7 +28,6 @@
     background-color: #15181c;
     border: 1px solid #1e2228;
     border-radius: 8px;
-    /* Increase padding for a more spacious feel inside the card */
     padding: 2.5rem; 
     margin-bottom: 2rem;
     transition: border-color 0.3s ease;
@@ -98,39 +97,92 @@
 }
 
 /* =========================================
-   Author Section Styles
+   Author Section Styles (Collapsible)
    ========================================= */
 .author-section {
-    margin-bottom: 5rem;
+    margin-bottom: 2rem;
+}
+
+/* Le bouton cliquable */
+.author-header-toggle {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    padding: 1rem 0;
+    border-bottom: 2px solid #1e2228;
+    transition: all 0.3s ease;
+}
+
+.author-header-toggle:hover {
+    border-color: var(--accent-color);
 }
 
 .author-heading {
     font-size: 2rem;
     color: var(--accent-color);
-    margin-bottom: 2rem;
-    padding-bottom: 0.5rem;
-    border-bottom: 2px solid #1e2228;
     text-transform: uppercase;
     letter-spacing: 2px;
+    margin: 0; /* On retire les marges car le padding du toggle gère l'espace */
+    transition: color 0.3s ease;
 }
 
-/* Updated book title size (changed to h3 in logic) */
+.author-header-toggle:hover .author-heading {
+    color: var(--text-light);
+}
+
+/* L'icône animée */
+.toggle-icon {
+    color: var(--text-muted);
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.author-header-toggle:hover .toggle-icon {
+    color: var(--accent-color);
+}
+
+/* Le conteneur des livres (Caché par défaut) */
+.author-books {
+    display: none;
+    padding-top: 2rem;
+}
+
+/* =========================================
+   ETAT DÉPLIÉ (Quand la classe is-expanded est active)
+   ========================================= 
+*/
+.author-section.is-expanded .author-books {
+    display: block;
+    animation: fadeInDown 0.4s ease-out;
+}
+
+.author-section.is-expanded .toggle-icon {
+    transform: rotate(180deg);
+    color: var(--accent-color);
+}
+
+.author-section.is-expanded .author-header-toggle {
+    border-color: var(--accent-color);
+}
+
+/* Animation d'apparition en douceur */
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* On garde la taille du titre du livre comme avant */
 .book-title {
     font-size: 1.3rem;
     font-weight: 700;
     color: var(--text-light);
 }
-
-/* Optional: Subtle fade-in animation for sections */
-.author-section {
-    animation: fadeIn 0.8s ease-in-out;
-}
-
-@keyframes fadeIn {
-    from { opacity: 0; transform: translateY(10px); }
-    to { opacity: 1; transform: translateY(0); }
-}
-
 
 /* =========================================
    Responsive Design (Mobile & Tablet)

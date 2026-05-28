@@ -2,13 +2,12 @@ document.addEventListener("DOMContentLoaded", function() {
 
     const listContainer = document.getElementById("readings-list");
 
-    // Check if container exists and if data file loaded correctly
     if (!listContainer || typeof LIBRARY_DATA === 'undefined') {
         console.error("Container or Data not found.");
         return;
     }
 
-    // Group the books by author
+    // Regroupement des livres par auteur
     const booksByAuthor = LIBRARY_DATA.reduce((acc, book) => {
         if (!acc[book.author]) {
             acc[book.author] = [];
@@ -17,21 +16,29 @@ document.addEventListener("DOMContentLoaded", function() {
         return acc;
     }, {});
 
-    // Iterate through the grouped data to build HTML
+    let fullHTML = "";
+
+    // Construction du HTML
     for (const [author, books] of Object.entries(booksByAuthor)) {
         
-        // Start an author section with a prominent heading
-        let authorSectionHTML = `
+        // En-tête de l'auteur (Cliquable) avec une icône SVG
+        fullHTML += `
             <div class="author-section">
-                <h2 class="author-heading">${author}</h2>
+                <div class="author-header-toggle">
+                    <h2 class="author-heading">${author}</h2>
+                    <svg class="toggle-icon" viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <polyline points="6 9 12 15 18 9"></polyline>
+                    </svg>
+                </div>
+                <div class="author-books">
         `;
 
-        // Add the books for this author
+        // Ajout des livres
         books.forEach(book => {
             const statusClass = book.status === "READ" ? "status-read" : "status-progress";
             const cleanReview = book.review.replace(/^\s+/gm, '');
 
-            authorSectionHTML += `
+            fullHTML += `
                 <article class="book-card">
                     <div class="book-header">
                         <div>
@@ -49,9 +56,24 @@ document.addEventListener("DOMContentLoaded", function() {
             `;
         });
 
-        authorSectionHTML += `</div>`;
-        
-        listContainer.innerHTML += authorSectionHTML;
+        // Fermeture de la section auteur
+        fullHTML += `</div></div>`;
     }
+
+    // Injection dans la page
+    listContainer.innerHTML = fullHTML;
+
+    // Ajout de l'interactivité (le système de volet)
+    const toggles = document.querySelectorAll('.author-header-toggle');
+    
+    toggles.forEach(toggle => {
+        toggle.addEventListener('click', function() {
+            // On cible la balise parente <div class="author-section">
+            const section = this.parentElement;
+            
+            // La méthode "toggle" ajoute la classe "is-expanded" si elle n'y est pas, ou l'enlève si elle y est
+            section.classList.toggle('is-expanded');
+        });
+    });
 
 });
