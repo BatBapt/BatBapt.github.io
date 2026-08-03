@@ -82,5 +82,12 @@ const LIBRARY_DATA = [
         score: "4/5",
         status: "READ",
         review: "Cogito is a really smart piece of speculative fiction that avoids the usual 'humans vs. robots' tropes to look deeper at philosophy and technology. By weaving in the Turing test and Cartesian logic, it asks whether AI can ever truly be conscious or if it is just mimicking us perfectly. The book also shows a harsh social reality where marginalized people have to risk dangerous brain upgrades just to stay employable in an automated world. It is a really grounded critique of transhumanism, showing how technology's promise of perfection risks wiping out the individual free will that makes us human."
+    },
+    {
+        title: "The Last Murder at the End of the World",
+        author: "Stuart Turton",
+        score: "3.5/5",
+        status: "READ",
+        review: "The Last Murder at the End of the World is a slow burn that rewards patience. Stuart Turton takes his time laying the groundwork, and though the central murder arrives later than you might expect, none of that setup feels wasted once the pieces start falling into place. From there, a steady stream of twists keeps the pages turning, each revelation reframing what came before and pulling you from one chapter to the next. What lingers most isn't the 'whodunit' itself but the questions it raises along the way : chief among them, do we remain the same person once our memories are stripped away? Beneath the mystery runs a darker current about human nature, a quiet insistence that man may well be a wolf to man. A mystery that stays with you longer than the mystery itself."
     }
 ];
