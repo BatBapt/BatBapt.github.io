@@ -1,0 +1,180 @@
+/* =========================================
+   Poster Audio Samples Page Styles
+   ========================================= */
+.poster-container {
+    width: 100%;
+    margin: 0 auto;
+    padding: 2rem 5% 4rem 5%;
+}
+
+.poster-header {
+    margin-bottom: 3rem;
+    border-bottom: 1px solid #1e2228;
+    padding-bottom: 1.5rem;
+}
+
+.poster-header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.poster-header p {
+    color: var(--text-muted);
+    font-size: 1.1rem;
+    max-width: 70ch;
+}
+
+.samples-card {
+    background-color: #15181c;
+    border: 1px solid #1e2228;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.samples-table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+    color-scheme: dark;
+}
+
+.samples-table th,
+.samples-table td {
+    padding: 1rem;
+    border-bottom: 1px solid #1e2228;
+    text-align: left;
+    vertical-align: top;
+}
+
+.samples-table tbody tr:last-child th,
+.samples-table tbody tr:last-child td {
+    border-bottom: none;
+}
+
+.samples-table thead th {
+    color: var(--text-light);
+    font-weight: 600;
+    border-top: 3px solid transparent;
+}
+
+.samples-table thead th:first-child {
+    width: 110px;
+}
+
+.samples-table thead th small {
+    display: block;
+    color: var(--text-muted);
+    font-weight: 400;
+    font-size: 0.8rem;
+}
+
+.samples-table thead th.best {
+    color: var(--accent-color);
+    border-top-color: var(--accent-color);
+}
+
+.samples-table td.best {
+    background-color: rgba(100, 255, 218, 0.03);
+}
+
+.samples-table th[scope="row"] {
+    font-size: 0.8rem;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 600;
+}
+
+.samples-table tbody tr {
+    transition: background-color 0.3s ease;
+}
+
+.samples-table tbody tr:hover {
+    background-color: #1a1e23;
+}
+
+.samples-table audio {
+    display: block;
+    width: 100%;
+    accent-color: var(--accent-color);
+}
+
+.transcript {
+    margin-top: 0.6rem;
+    font-size: 0.85rem;
+    color: var(--text-muted);
+    line-height: 1.5;
+}
+
+.transcript mark {
+    background-color: rgba(255, 171, 0, 0.1);
+    color: #ffab00;
+    border-radius: 3px;
+    padding: 0 0.15rem;
+}
+
+.clip-wer {
+    margin-top: 0.3rem;
+    font-size: 0.75rem;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* =========================================
+   Responsive Design (Mobile & Tablet)
+   ========================================= */
+@media (max-width: 768px) {
+    .poster-container {
+        padding: 1.5rem 5% 3rem 5%;
+    }
+
+    .poster-header h1 {
+        font-size: 2rem;
+    }
+
+    .samples-table,
+    .samples-table tbody,
+    .samples-table tr,
+    .samples-table th,
+    .samples-table td {
+        display: block;
+        width: 100%;
+    }
+
+    .samples-table thead {
+        display: none;
+    }
+
+    .samples-table tbody tr {
+        padding: 1rem;
+        border-bottom: 1px solid #1e2228;
+    }
+
+    .samples-table tbody tr:last-child {
+        border-bottom: none;
+    }
+
+    .samples-table th,
+    .samples-table td {
+        padding: 0.6rem 0;
+        border-bottom: none;
+    }
+
+    .samples-table td.best {
+        background-color: transparent;
+    }
+
+    .samples-table td::before {
+        content: attr(data-label);
+        display: block;
+        font-size: 0.75rem;
+        color: var(--text-light);
+        font-weight: 600;
+        margin-bottom: 0.3rem;
+    }
+
+    .samples-table td.best::before {
+        color: var(--accent-color);
+    }
+}
