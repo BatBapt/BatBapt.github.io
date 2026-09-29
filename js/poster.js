@@ -84,3 +84,7 @@ for (let i = 1; i <= N_SAMPLES; i++) {
     }
     body.insertAdjacentHTML("beforeend", `<tr><th scope="row">Sample ${i}</th>${cells}</tr>`);
 }
+// Only one audio plays at a time
+document.addEventListener("play", e => {
+    document.querySelectorAll("#samples audio").forEach(a => { if (a !== e.target) a.pause(); });
+}, true);
